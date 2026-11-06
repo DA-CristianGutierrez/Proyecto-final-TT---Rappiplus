@@ -51,10 +51,9 @@ ETL, funnel de conversión, experimento A/B, análisis estadístico
 
 ## Metodología
 
-- Limpieza y transformación de datos: Se realizó .
-- Verificación clave: Se verificó que los registros tuvieran un identificador único y sin duplicados con el fin de evitar errores en la aplicación de las pruebas estadísticas.
-- Aplicación de pruebas estadísticas: Se aplicaron las pruebas que determinan diferencias clave; promedios entre versiones, canales, tipos de usuarios.
-- Segmentaciones clave: Se presentaron visualizaciones por segmentos clave para complementar y confirmar el analisis. 
+- Limpieza y transformación de datos: Se convirtieron tipos de dato al formato correcto, eliminaron duplicados, se estandarizaron categorías y finalmente se remplazaron valores nulos.
+- Inicio del análisis: Se ejecutaron los cálculos clave tales como métricas de negocio, funnel de retención y por cohortes, aplicación de pruebas estadísticas (experimento A/B). 
+- Segmentaciones clave: Se construyeron dashboards para complementar el análisis previo así como la inclusión de segmentaciones clave. 
 
 
 ## Visualizaciones destacadas
@@ -62,7 +61,8 @@ ETL, funnel de conversión, experimento A/B, análisis estadístico
 1. Gráfico conversiones por canal: La visualización indica claramente la fuente de tráfico más y menos usada por los usuarios así como una visual de conversión para cada fuente. La tasa de conversión es proporcional en todos los canales, lo cual indica que el proceso de compra es de la misma fluidez en cada canal.
 
 
-<img width="589" height="455" alt="image" src="https://github.com/user-attachments/assets/a0333f25-5af2-45c1-9fa8-371b8d2628b3" />
+<img width="1092" height="575" alt="Captura de pantalla (28)" src="https://github.com/user-attachments/assets/e33123a7-4579-42f6-af10-5ff853ed580f" />
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -70,13 +70,16 @@ ETL, funnel de conversión, experimento A/B, análisis estadístico
 
 2. Gráfico conversiones por tipo de usuario: Se evidencia una conversión proporcional entre ambos tipos de usuario, sin embargo, presenta diferencias significativas en el volumen de estos, lo cual arroja una clave en este segmento.
 
-<img width="589" height="455" alt="image" src="https://github.com/user-attachments/assets/9163a4ea-d031-4e25-a06b-f49d8a014372" />
+<img width="1075" height="545" alt="Captura de pantalla (27)" src="https://github.com/user-attachments/assets/23f2d96c-cb90-4e3b-a72e-53ad372d84e3" />
+
+
 
 
 ## Conclusiones y recomendaciones
-- Prueba entre versiones A/B: La diferencia en la tasa de conversión entre ambas paginas es de aproximadamente 3 puntos porcentuales,  predominando en el grupo B la mayor tasa de conversión.
-- Organic y ADS son las fuentes que más usuarios canalizan, sin embargo, la tasa de conversión es simétrica en todos las fuentes de trafico.
-- Los usuarios nuevos generan mayor cantidad de conversiones, aunque nuevamente, la tasa de conversión se mantiene simétrica entre ambos grupos.
+
+- conversión_add_payment Es el proceso en el cual se presenta más drop-off de usuarios.
+- Los usuarios vuelven a comprar y al agruparlos por cohortes se detectan diferencias en la eficiencia de fidelidad del cliente.
+- La prueba estadística aplicada en el experimento A/B indica que no existe evidencia suficiente para afirmar que hay una diferencia real entre ambas versiones.
 
 Acciones recomendadas:
 
