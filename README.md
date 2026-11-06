@@ -30,7 +30,7 @@ o:
 2.Ejecuta las celdas en orden
 3.El notebook carga automáticamente el dataset desde /data/ o desde un enlace público (según corresponda)
 
-## Análisis integral RappiPlus
+# Resumen
 
 En este proyecto aplique varias técnicas de análisis requeridas por la necesidad del negocio; inicialmente un cálculo de métricas generales para introducir una vista a la rentabilidad del negocio utilizando python. Construí funnels de cantidad y conversión de usuarios así como una matriz de cohortes con SQL. Apliqué un experimento A/B para comparar versiones de la plataforma. Finalmente tomé los datasets limpios para construir un análisis visual compuesto por dashboards que permitirían hacer un zoom a la rentabilidad a detalle del negocio creando segmentaciones. Como resultado, identifiqué puntos clave de mejora como en la tabla por cohortes, meses donde las ventas son críticas, así como inconsistencias en una de las etapas del funnel. 
 
@@ -58,8 +58,7 @@ ETL, funnel de conversión, experimento A/B, análisis estadístico
 
 ## Visualizaciones destacadas
 
-1. Gráfico conversiones por canal: La visualización indica claramente la fuente de tráfico más y menos usada por los usuarios así como una visual de conversión para cada fuente. La tasa de conversión es proporcional en todos los canales, lo cual indica que el proceso de compra es de la misma fluidez en cada canal.
-
+1. Dashboard ejecutivo: Esta visualización contiene el orden de presentación estándar, ubicando las métricas generales del negocio en la parte superior mostrando la rentabilidad. Seguidamente se observan dos gráficos temporales evidenciando el pico de ventas y temporadas críticas. Finalmente un gráfico que aporta información sobre segmentos con su nivel de ingreso y respectiva ganancia. 
 
 <img width="1092" height="575" alt="Captura de pantalla (28)" src="https://github.com/user-attachments/assets/e33123a7-4579-42f6-af10-5ff853ed580f" />
 
@@ -68,11 +67,9 @@ ETL, funnel de conversión, experimento A/B, análisis estadístico
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
-2. Gráfico conversiones por tipo de usuario: Se evidencia una conversión proporcional entre ambos tipos de usuario, sin embargo, presenta diferencias significativas en el volumen de estos, lo cual arroja una clave en este segmento.
+2. Dashboard detallado: Esta visualización devuelve la lista de ordenes y cantidad de ventas de un producto seleccionado en el dashboard general. Se agregan dos filtros que pueden arrojar mayor detalle si es de preferencia del usuario / stakeholder.
 
 <img width="1075" height="545" alt="Captura de pantalla (27)" src="https://github.com/user-attachments/assets/23f2d96c-cb90-4e3b-a72e-53ad372d84e3" />
-
-
 
 
 ## Conclusiones y recomendaciones
@@ -83,5 +80,5 @@ ETL, funnel de conversión, experimento A/B, análisis estadístico
 
 Acciones recomendadas:
 
-- Revisar la diferencia de limitaciones entre las versiones de la página A y la página B así como el proceso de compra el cual es más efectivo en la página B.
-- Revisar el stock de productos buscados por usuarios recurrentes donde haya mayor coincidencia para generar promociones o incluso entender que están buscando realmente para incrementar la probabilidad de compra.
+- Revisar que inconvenientes se están presentando en el paso de método de pago o expandir los métodos para mejorar la tasa de conversión.
+- Considerar un mayor volumen de inversión en productos que generan ganancias considerables y cuestan menos para que el profit final pueda mejorarse.
