@@ -1,8 +1,7 @@
 # Proyecto-integral-Rappiplus
 
-El dataset landing_experiment incluye 40.000 registros de usuarios únicos que se registraron en una de las dos versiones de la página.
-En este proyecto se utilizaron varios datasets los cuales se unificaron tanto en python como en relaciones de modalados de datos, sin embargo, teniendo como base tabla el dataset orders_clean.csv el cual contiene 25.000 registros únicos (después de limpieza), events / users / user_activity, para analizar el comportamiento del funel y cohortes de usuarios dentro de la plataforma y
-experiment_checkout_ui.csv para evaluar diferencias de conversión entre dos versiones de grupos de compra.
+El dataset landing_experiment incluye 40.000 registros de usuarios únicos que se registraron en una de las dos versiones de la plataforma de Rappi.
+En este proyecto se utilizaron varios datasets los cuales se unificaron tanto en python como en relaciones de modelados de datos, sin embargo, teniendo como base tabla el dataset orders_clean.csv el cual contiene 25.000 registros únicos (después de limpieza), events / users / user_activity, para analizar el comportamiento del funel y cohortes de usuarios dentro de la plataforma y experiment_checkout_ui.csv para evaluar diferencias de conversión entre dos versiones de grupos de compra.
 
 ## 📂 Contenido del repositorio
 
@@ -32,7 +31,7 @@ o:
 
 # Resumen
 
-En este proyecto aplique varias técnicas de análisis requeridas por la necesidad del negocio; inicialmente un cálculo de métricas generales para introducir una vista a la rentabilidad del negocio utilizando python. Construí funnels de cantidad y conversión de usuarios así como una matriz de cohortes con SQL. Apliqué un experimento A/B para comparar versiones de la plataforma. Finalmente tomé los datasets limpios para construir un análisis visual compuesto por dashboards que permitirían hacer un zoom a la rentabilidad a detalle del negocio creando segmentaciones. Como resultado, identifiqué puntos clave de mejora como en la tabla por cohortes, meses donde las ventas son críticas, así como inconsistencias en una de las etapas del funnel. 
+En este proyecto aplique varias técnicas de análisis según requerimiento; inicialmente un cálculo de métricas generales para introducir una vista a la rentabilidad del negocio utilizando python. Construí funnels de cantidad y conversión de usuarios así como una matriz de cohortes con SQL. Apliqué un experimento A/B para comparar versiones de la plataforma. Finalmente tomé los datasets limpios para construir un análisis visual compuesto por dashboards que permitirían hacer un zoom a la rentabilidad a detalle creando segmentaciones. Como resultado, identifiqué puntos clave de mejora como en la tabla por cohortes, meses donde las ventas son críticas, así como inconsistencias en una de las etapas del funnel. 
 
 ## 🧠 Objetivo del análisis
 
@@ -43,7 +42,6 @@ Entender el desempeño del servicio y detectar oportunidades concretas de mejora
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=matplotlib&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
 
@@ -52,13 +50,13 @@ ETL, funnel de conversión, experimento A/B, análisis estadístico
 ## Metodología
 
 - Limpieza y transformación de datos: Se convirtieron tipos de dato al formato correcto, eliminaron duplicados, se estandarizaron categorías y finalmente se remplazaron valores nulos.
-- Inicio del análisis: Se ejecutaron los cálculos clave tales como métricas de negocio, funnel de retención y por cohortes, aplicación de pruebas estadísticas (experimento A/B). 
-- Segmentaciones clave: Se construyeron dashboards para complementar el análisis previo así como la inclusión de segmentaciones clave. 
+- Ejecución del análisis: Se ejecutaron los cálculos clave tales como métricas de negocio, funnel de retención y por cohortes, aplicación de pruebas estadísticas (experimento A/B). 
+- Segmentaciones clave: Se construyeron dashboards para complementar el análisis previo con visualizaciones, así como la inclusión de segmentaciones clave. 
 
 
 ## Visualizaciones destacadas
 
-1. Dashboard ejecutivo: Esta visualización contiene el orden de presentación estándar, ubicando las métricas generales del negocio en la parte superior mostrando la rentabilidad. Seguidamente se observan dos gráficos temporales evidenciando el pico de ventas y temporadas críticas. Finalmente un gráfico que aporta información sobre segmentos con su nivel de ingreso y respectiva ganancia. 
+1. Dashboard ejecutivo: Esta visualización contiene el orden de presentación estándar, ubicando las métricas generales del negocio en la parte superior mostrando la rentabilidad. Seguidamente se observan dos gráficos temporales evidenciando el pico de ventas y meses críticos. Finalmente un gráfico que aporta información sobre segmentos con su nivel de ingreso y respectiva ganancia. 
 
 <img width="1092" height="575" alt="Captura de pantalla (28)" src="https://github.com/user-attachments/assets/e33123a7-4579-42f6-af10-5ff853ed580f" />
 
@@ -74,7 +72,7 @@ ETL, funnel de conversión, experimento A/B, análisis estadístico
 
 ## Conclusiones y recomendaciones
 
-- conversión_add_payment Es el proceso en el cual se presenta más drop-off de usuarios.
+- conversión_add_payment Es el proceso en el cual se presenta mayor abandono de usuarios.
 - Los usuarios vuelven a comprar y al agruparlos por cohortes se detectan diferencias en la eficiencia de fidelidad del cliente.
 - La prueba estadística aplicada en el experimento A/B indica que no existe evidencia suficiente para afirmar que hay una diferencia real entre ambas versiones.
 
